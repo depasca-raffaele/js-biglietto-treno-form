@@ -12,10 +12,8 @@
 </head>
 
 <body>
-
-    <form action="submit" id="ticket-form">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <form action="submit" id="ticket-form" class="row">
                 <div class="col-6">
                     <label for="distance" class="form-label">KM da percorrere</label>
                     <input id="distance" type="text" class="form-control" required>
@@ -31,9 +29,18 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-success">genera</button>
                 </div>
+
+        </form>
+
+        <div id="ticket-card" class="card d-none">
+            <div class="card-body">
+                <h3>IL TUO BIGLIETTO</h3>
+                <p class="card-text">
+                    <strong>PREZZO: </strong><span id="ticket-price"></span>
+                </p>
             </div>
         </div>
-    </form>
+    </div>
 
 
     <!--JS-->
