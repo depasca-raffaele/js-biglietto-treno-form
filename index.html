@@ -13,7 +13,27 @@
 
 <body>
 
-
+    <form action="submit">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label for="distance" class="form-label">KM da percorrere</label>
+                    <input id="distance" type="text" class="form-control" required>
+                </div>
+                <div class="col">
+                    <label for="age" class="form-label">Scegli range d'età</label>
+                    <select id="age" class="form-select">
+                        <option value="minorenne">minore di 18 anni</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="over">over 65</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-success">genera</button>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
     <!--JS-->
